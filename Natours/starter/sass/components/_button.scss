@@ -1,5 +1,5 @@
 .btn {
-    
+
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -9,7 +9,7 @@
         border-radius: 10rem;
         transition: all 0.3s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
 
     &:hover {
@@ -17,8 +17,8 @@
         box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 
         &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
         }
     }
 
@@ -32,9 +32,8 @@
         color: $color-white;
 
         &::after {
-        background-color: #fff;
+            background-color: #fff;
         }
-
     }
 
     &::after {
