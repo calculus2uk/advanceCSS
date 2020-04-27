@@ -23,4 +23,12 @@ ctx.stroke();
 
 //3. Write a draw function
 
-//4.
+//4. Write the handlers for the keys
+function handleKey(e) {
+	if (e.key.includes('Arrow')) {
+		console.log(e.key);
+	}
+}
+
+//6. Listen for the arrow keys
+window.addEventListener('keydown', handleKey);
