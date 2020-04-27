@@ -65,3 +65,18 @@ function handleKey(e) {
 
 //6. Listen for the arrow keys
 window.addEventListener('keydown', handleKey);
+
+//7 Clear the canvas
+function clearCanvas() {
+	canvas.classList.add('shake');
+	ctx.clearRect(0, 0, width, height);
+	canvas.addEventListener(
+		'animationend',
+		function () {
+			canvas.classList.remove('shake');
+		},
+		{ once: true },
+	);
+}
+
+shakeButton.addEventListener('click', clearCanvas);
